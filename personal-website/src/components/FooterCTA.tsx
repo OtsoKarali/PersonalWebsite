@@ -94,7 +94,7 @@ export function FooterCTA({
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-navy/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors"
+                    className="w-full px-4 py-3 bg-black/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -110,7 +110,7 @@ export function FooterCTA({
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-navy/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors"
+                    className="w-full px-4 py-3 bg-black/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -126,7 +126,7 @@ export function FooterCTA({
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 bg-navy/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-black/50 border border-ghost/20 rounded-lg text-white placeholder-ghost/50 focus:outline-none focus:border-signal transition-colors resize-none"
                     placeholder="Tell me about your project..."
                   />
                 </div>
@@ -155,7 +155,7 @@ export function FooterCTA({
                   {resumeUrl && (
                     <a
                       href={resumeUrl}
-                      className="flex items-center gap-3 p-4 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="flex items-center gap-3 p-4 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Download className="text-signal group-hover:text-white transition-colors" size={20} />
                       <span className="text-white font-medium">Download Resume</span>
@@ -165,7 +165,7 @@ export function FooterCTA({
                   {calendlyUrl && (
                     <a
                       href={calendlyUrl}
-                      className="flex items-center gap-3 p-4 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="flex items-center gap-3 p-4 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Mail className="text-signal group-hover:text-white transition-colors" size={20} />
                       <span className="text-white font-medium">Schedule a Call</span>
@@ -184,7 +184,7 @@ export function FooterCTA({
                       href={socialLinks.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="p-3 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Github className="text-signal group-hover:text-white transition-colors" size={24} />
                     </a>
@@ -195,7 +195,7 @@ export function FooterCTA({
                       href={socialLinks.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="p-3 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Linkedin className="text-signal group-hover:text-white transition-colors" size={24} />
                     </a>
@@ -206,7 +206,7 @@ export function FooterCTA({
                       href={socialLinks.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="p-3 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Twitter className="text-signal group-hover:text-white transition-colors" size={24} />
                     </a>
@@ -215,7 +215,7 @@ export function FooterCTA({
                   {socialLinks.email && (
                     <a
                       href={`mailto:${socialLinks.email}`}
-                      className="p-3 bg-navy/50 rounded-lg hover:bg-signal/20 transition-colors group"
+                      className="p-3 bg-black/50 rounded-lg hover:bg-signal/20 transition-colors group"
                     >
                       <Mail className="text-signal group-hover:text-white transition-colors" size={24} />
                     </a>

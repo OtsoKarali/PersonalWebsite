@@ -14,7 +14,7 @@ export function Layout({ children, className = '' }: LayoutProps) {
 
   return (
     <motion.div
-      className={`min-h-screen bg-navy text-white ${className}`}
+      className={`min-h-screen bg-black text-white ${className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: prefersReducedMotion ? 0 : 0.5 }}

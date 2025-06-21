@@ -62,6 +62,8 @@ export default function Home() {
             id="about"
             title="About Me"
             subtitle="Driven by data, passionate about markets."
+            className="bg-black"
+            centered
           >
             <div className="space-y-6">
               <p className="text-lg text-ghost leading-relaxed">
@@ -73,11 +75,11 @@ export default function Home() {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="text-center p-4 bg-navy/50 rounded-lg">
+                <div className="text-center p-4 bg-black/50 rounded-lg">
                   <div className="text-3xl font-bold text-signal mb-2">3.9/4.0</div>
                   <div className="text-ghost">Overall GPA</div>
                 </div>
-                <div className="text-center p-4 bg-navy/50 rounded-lg">
+                <div className="text-center p-4 bg-black/50 rounded-lg">
                   <div className="text-3xl font-bold text-signal mb-2">4.0/4.0</div>
                   <div className="text-ghost">Major GPA</div>
                 </div>
@@ -85,18 +87,67 @@ export default function Home() {
             </div>
           </ChapterSection>
 
+          {/* Abstract blob video */}
+          <div className="py-16 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <video
+                src="/Animations/Abstract blob.mp4"
+                className="w-full max-w-3xl h-auto"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+              />
+            </motion.div>
+          </div>
+
           <ChapterSection
             id="journey"
             title="My Experience"
             subtitle="From research to quantitative finance"
+            centered
           >
             <Timeline events={milestones} />
           </ChapterSection>
+
+          {/* Coding decorative element with transition */}
+          <div className="py-16 flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <motion.img
+                src="/Elements/coding.png"
+                alt="Coding illustration"
+                className="w-32 h-32 md:w-40 md:h-40 opacity-80"
+                animate={{ 
+                  rotate: [0, 5, -5, 0],
+                  scale: [1, 1.05, 1]
+                }}
+                transition={{ 
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+            </motion.div>
+          </div>
 
           <ChapterSection
             id="skills"
             title="Technical Skills"
             subtitle="Languages and technologies I use"
+            centered
           >
             <SkillsGrid skills={skills} />
           </ChapterSection>
@@ -105,6 +156,7 @@ export default function Home() {
             id="projects"
             title="Featured Projects"
             subtitle="Applying theory to practice"
+            centered
           >
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (

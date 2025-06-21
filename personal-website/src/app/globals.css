@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply bg-navy text-white;
+    @apply bg-black text-white;
   }
 }
 
@@ -58,23 +58,6 @@
   .backdrop-blur-lg {
     backdrop-filter: blur(16px);
   }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-navy;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-signal/50 rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-signal;
 }
 
 /* Smooth animations for reduced motion users */

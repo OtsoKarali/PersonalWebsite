@@ -41,6 +41,17 @@ export function HeroSection({
           animate="visible"
           className="max-w-4xl mx-auto"
         >
+          <motion.div
+            variants={fadeInUp}
+            className="mb-8 flex justify-center"
+          >
+            <img
+              src="/Elements/ring (dark).png"
+              alt="Decorative ring"
+              className="w-32 h-32 md:w-40 md:h-40 opacity-80"
+            />
+          </motion.div>
+          
           <motion.h1 
             variants={fadeInUp}
             className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-ghost bg-clip-text text-transparent"
