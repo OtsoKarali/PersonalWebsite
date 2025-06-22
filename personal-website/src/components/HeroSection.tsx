@@ -45,10 +45,19 @@ export function HeroSection({
             variants={fadeInUp}
             className="mb-8 flex justify-center"
           >
-            <img
+            <motion.img
               src="/Elements/ring (dark).png"
               alt="Decorative ring"
               className="w-32 h-32 md:w-40 md:h-40 opacity-80"
+              animate={{ 
+                rotate: [0, 5, -5, 0],
+                scale: [1, 1.05, 1]
+              }}
+              transition={{ 
+                duration: 5, 
+                repeat: Infinity, 
+                ease: "easeInOut" 
+              }}
             />
           </motion.div>
           
