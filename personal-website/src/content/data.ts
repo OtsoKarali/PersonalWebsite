@@ -74,27 +74,33 @@ export const milestones: Milestone[] = [
     title: 'Quantitative Private Equity Intern',
     summary: 'Building ML projects for the secondaries market to predict continuation fund likelihood and working with deal teams to help in the originations process at RenWave Kore.',
     icon: '📈',
-    logo: '/logos/renwave_kore_logo.jpeg'
+    logo: '/logos/renwave_kore_logo.jpeg',
+    bullets: [
+      'Building ML projects for the secondaries market to predict continuation fund likelihood',
+      'Working with deal teams to help in the originations process at RenWave Kore'
+    ]
   },
   {
     date: 'Jan 2025 - June 2025',
     title: 'Applied Mathematics Researcher',
     summary: 'Collaborated with Prof. Bakhyt Aitzhanova at the UVA Geometry Lab to develop forward and inverse kinematic algorithms for robotic arm control.',
     icon: '🤖',
-    logo: '/logos/uva_logo.jpg'
+    logo: '/logos/uva_logo.jpg',
+    bullets: [
+      'Developed forward and inverse kinematic algorithms for robotic arm control',
+      'Collaborated with Prof. Bakhyt Aitzhanova at the UVA Geometry Lab'
+    ]
   },
   {
     date: 'Feb 2024 - Sep 2024',
     title: 'Machine Learning Intern',
     summary: 'Developed and optimized ML models at Luminoah to enhance occlusion monitoring systems, reducing PSI thresholds by 15%. Authored 8 FDA-submitted test protocols.',
     icon: '🔬',
-    logo: '/logos/luminoah_logo.jpeg'
-  },
-  {
-    date: 'Expected May 2027',
-    title: 'University of Virginia',
-    summary: 'Pursuing a B.A. in Computer Science and B.A. in Mathematics. Member of Cavalier Trading, UVA Poker, and Forge Scholars.',
-    icon: '🎓',
-    logo: '/logos/uva_logo.jpg'
+    logo: '/logos/luminoah_logo.jpeg',
+    bullets: [
+      'Developed and optimized ML models to enhance occlusion monitoring systems',
+      'Reduced PSI thresholds by 15%',
+      'Authored 8 FDA-submitted test protocols'
+    ]
   }
-] 
+]

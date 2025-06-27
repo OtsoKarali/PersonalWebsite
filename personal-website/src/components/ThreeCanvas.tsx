@@ -13,7 +13,6 @@ function Scene({ isRevealed, onShapeClick, onShapeHover }: {
   const meshRef = useRef<THREE.Mesh>(null!);
   const materialRef = useRef<THREE.ShaderMaterial>(null!);
   const scaleRef = useRef(1);
-  const [isHovered, setIsHovered] = useState(false);
 
   useFrame((state) => {
     if (meshRef.current) {
@@ -34,12 +33,10 @@ function Scene({ isRevealed, onShapeClick, onShapeHover }: {
   });
 
   const handlePointerOver = () => {
-    setIsHovered(true);
     onShapeHover(true);
   };
 
   const handlePointerOut = () => {
-    setIsHovered(false);
     onShapeHover(false);
   };
 

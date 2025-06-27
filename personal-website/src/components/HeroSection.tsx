@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Mail } from 'lucide-react'
+import { ArrowDown, Mail } from 'lucide-react'
 import { fadeInUp, staggerContainer } from '@/lib/scrollVariants'
 
 interface HeroSectionProps {
@@ -11,7 +11,6 @@ interface HeroSectionProps {
   bgImg?: string
   ctaText?: string
   ctaUrl?: string
-  resumeUrl?: string
 }
 
 export function HeroSection({
@@ -20,8 +19,7 @@ export function HeroSection({
   description,
   bgImg,
   ctaText = "Let's Connect",
-  ctaUrl = "#contact",
-  resumeUrl
+  ctaUrl = "#contact"
 }: HeroSectionProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -93,16 +91,6 @@ export function HeroSection({
               <Mail size={20} />
               {ctaText}
             </a>
-            
-            {resumeUrl && (
-              <a
-                href={resumeUrl}
-                className="inline-flex items-center gap-2 px-8 py-3 border-2 border-signal text-signal hover:bg-signal hover:text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                <Download size={20} />
-                Download Resume
-              </a>
-            )}
           </motion.div>
         </motion.div>
       </div>

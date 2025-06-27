@@ -4,6 +4,7 @@ export interface Milestone {
   summary: string
   icon?: string
   logo?: string
+  bullets?: string[]
 }
 
 export interface Project {

@@ -4,18 +4,16 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HeroSection } from '@/components/HeroSection'
 import { ChapterSection } from '@/components/ChapterSection'
-import { Timeline } from '@/components/Timeline'
 import { ProjectCard } from '@/components/ProjectCard'
 import { SkillsGrid } from '@/components/SkillsGrid'
-import { TestimonialsCarousel } from '@/components/TestimonialsCarousel'
 import { FooterCTA } from '@/components/FooterCTA'
-import { projects, skills, testimonials, milestones } from '@/content/data'
+import { projects, skills, milestones } from '@/content/data'
 import { HeroVideo } from '@/components/HeroVideo'
-import { ArrowRight } from 'lucide-react'
+import { ZigZagTimeline } from '@/components/Roadmap'
+import { EducationSection } from '@/components/EducationSection'
 
 export default function Home() {
   const [isEntered, setIsEntered] = useState(false);
-  const [isHoveringVideo, setIsHoveringVideo] = useState(false);
 
   useEffect(() => {
     if (!isEntered) {
@@ -40,7 +38,7 @@ export default function Home() {
           <HeroVideo 
             isRevealed={isEntered}
             onEnter={handleEnter}
-            onHover={setIsHoveringVideo}
+            onHover={() => {}}
           />
         )}
       </AnimatePresence>
@@ -55,7 +53,6 @@ export default function Home() {
             headline="Otso Karali"
             subheadline="Mathematics & Computer Science Student"
             description="Aspiring quantitative researcher with a passion for applying mathematical and computational skills to solve complex financial problems on Wall Street."
-            resumeUrl="/OtsoKarali_Resume.pdf"
           />
 
           <ChapterSection
@@ -114,7 +111,16 @@ export default function Home() {
             subtitle="From research to quantitative finance"
             centered
           >
-            <Timeline events={milestones} />
+            <ZigZagTimeline events={milestones} />
+          </ChapterSection>
+
+          <ChapterSection
+            id="education"
+            title="Education"
+            subtitle="Academic background and achievements"
+            centered
+          >
+            <EducationSection />
           </ChapterSection>
 
           {/* Coding decorative element with transition */}
@@ -166,7 +172,6 @@ export default function Home() {
           </ChapterSection>
 
           <FooterCTA
-            resumeUrl="/OtsoKarali_Resume.pdf"
             socialLinks={{
               github: 'https://github.com/OtsoKarali',
               linkedin: 'https://linkedin.com/in/otsokarali',

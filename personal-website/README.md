@@ -1,6 +1,6 @@
 # Next-Generation Scrollytelling Portfolio
 
-A modern, recruiter-ready portfolio website built with Next.js 18, Tailwind CSS, and Framer Motion. Features smooth scroll animations, responsive design, and optimized performance.
+My personal portfolio website. Otso Karali June 22 2025.
 
 ## ✨ Features
 
@@ -10,27 +10,6 @@ A modern, recruiter-ready portfolio website built with Next.js 18, Tailwind CSS,
 - **SEO Optimized**: Open Graph tags, structured data, and performance optimized
 - **Responsive Design**: Works perfectly on all devices
 - **Performance Focused**: Lazy loading, optimized images, and fast loading times
-
-## 🚀 Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd personal-website
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
@@ -59,44 +38,6 @@ src/
     ├── scrollVariants.ts # Framer Motion variants
     ├── useReducedMotionGuard.ts
     └── useLazyImage.ts
-```
-
-## 🎨 Customization
-
-### 1. Update Personal Information
-
-Edit `src/content/data.ts` to customize:
-- Projects and case studies
-- Skills and expertise
-- Testimonials
-- Career milestones
-
-### 2. Modify Colors and Styling
-
-Update `tailwind.config.ts` to change the color palette:
-```js
-colors: {
-  navy: '#0A1931',   // Primary background
-  signal: '#185ADB', // Accent color
-  ghost: '#E5F2FC',  // Light text/cards
-}
-```
-
-### 3. Update SEO Metadata
-
-Edit `src/lib/SEO.ts` to customize:
-- Page titles and descriptions
-- Open Graph images
-- Social media links
-- Contact information
-
-### 4. Add Your Content
-
-Replace the sample content in `src/app/page.tsx` with your own:
-- Personal story and background
-- Project descriptions
-- Skills and technologies
-- Contact information
 
 ## 🎯 Key Components
 
@@ -122,12 +63,6 @@ Auto-scrolling testimonials with pause-on-hover functionality.
 Contact form with social links and quick actions.
 
 ## 🔧 Configuration
-
-### Environment Variables
-Create a `.env.local` file for any API keys or external services:
-```env
-NEXT_PUBLIC_SITE_URL=https://yourdomain.com
-```
 
 ### Performance Optimization
 - Images are automatically optimized with Next.js Image component
@@ -155,19 +90,6 @@ The portfolio is fully responsive with breakpoints:
 - Screen reader friendly
 - High contrast ratios
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-### Other Platforms
-The app can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- DigitalOcean App Platform
-
 ## 📈 Performance
 
 - Lighthouse Score: 95+ across all metrics
@@ -175,24 +97,9 @@ The app can be deployed to any platform that supports Next.js:
 - Bundle Size: < 500KB
 - Load Time: < 2 seconds
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ## 📄 License
 
-MIT License - feel free to use this template for your own portfolio!
-
-## 🆘 Support
-
-If you need help customizing your portfolio:
-1. Check the documentation
-2. Look at the sample content
-3. Open an issue for bugs
-4. Create a discussion for questions
+MIT License !
 
 ---
 
